@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Global styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e4cfcf; /* Light pink background */
+            margin-top: 80px; /* To prevent content being hidden behind navbar */
+        }
+
+         /* Navbar Styling */
+         .navbar {
+            background-color: #e4cfcf;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            color: #5a3e3e;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+        }
+
+        .navbar .navbar-brand .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #5a3e3e;
+            font-size: 1.1rem;
+            padding: 12px 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #d9534f;
+            text-decoration: none;
+        }
+
+        .navbar-toggler {
+            border-color: #5a3e3e;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('./we.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #d9534f;
+            text-decoration: none;
+        }
+
+        /* Registry Section Styling */
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #5a3e3e;
+        }
+
+        .section-description {
+            font-size: 1.25rem;
+            color: #555;
+        }
+
+        .card {
+            transition: all 0.3s ease;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .btn-custom {
+            border-radius: 25px;
+            padding: 10px 30px;
+            font-size: 1rem;
+            background-color: #004cff;
+            border: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .btn-custom:hover {
+            background-color: #000000;
+            text-decoration: none;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+
+        .footer p {
+            color: #333;
+            margin: 0;
+        }
+
+        .footer a {
+            color: #d9534f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="./at-initial-wedding-monogram-logo-vector.jpg" alt="Wedding Planner Logo" class="logo">
+            <span>Wedding</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="our story.html">Our Story</a></li>
+                <li class="nav-item"><a class="nav-link" href="guests.html">Guests</a></li>
+                <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+                <li class="nav-item"><a class="nav-link" href="itinerary.html">Itinerary</a></li>
+                <li class="nav-item"><a class="nav-link" href="registry.html">Registry</a></li>
+                <li class="nav-item"><a class="nav-link" href="rsvp.html">RSVP</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+<section id="home" class="hero text-center">
+    <div class="container" style="position: relative; z-index: 1; padding-top: 15vh;">
+        <!-- Content for Hero Section -->
+        <h1 class="hero-heading">Jerick & Cassy</h1>
+        <p class="hero-subtitle">A Love Story to Remember</p>
+    </div>
+</section>
+
+
+<style>
+   .hero-heading {
+    font-size: 4.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin-top: 5vh;  /* Reduced to bring it higher */
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 400px;
+    color: #000000;
+    margin-top: 10px;  /* Space between the heading and subtitle */
+}
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+
+</style>
+
+    <!-- Registry Section -->
+    <section id="registry" class="registry-section py-5">
+        <div class="container text-center">
+            <h1 class="section-title mb-4">Wedding Registry</h1>
+            <p class="section-subtitle mb-4">Your presence is the best gift we could ask for, but if you wish to contribute, here are some options.</p>
+            <div class="row justify-content-center">
+                <!-- Crate & Barrel Registry -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./k.jpg" alt="Crate & Barrel Logo" class="img-fluid" style="max-width: 40%; height: auto; margin-bottom: 15px; border-radius: 8px;">
+                            <p class="card-text">Explore our selection of home goods and kitchen essentials.</p>
+                            <a href="https://www.crateandbarrel.com" target="_blank" class="btn-custom">Visit Registry</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Target Registry -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./icon.jpg" alt="Target Logo" class="img-fluid" style="max-width: 40%; height: auto; margin-bottom: 15px; border-radius: 8px;">
+                            <p class="card-text">Find everything from decor to dining sets on our Target registry.</p>
+                            <a href="https://www.target.com" target="_blank" class="btn-custom">Visit Registry</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amazon Registry -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./images.png" alt="Amazon Logo" class="img-fluid" style="max-width: 40%; height: auto; margin-bottom: 15px; border-radius: 8px;">
+                            <p class="card-text">Browse our Amazon registry for a wide range of gifts and more.</p>
+                            <a href="https://www.amazon.com" target="_blank" class="btn-custom">Visit Registry</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center py-4" style="background-color: #f8f9fa; border-top: 2px solid #d9534f;">
+        <div class="container">
+            <p class="footer-text" style="font-family: 'Lora', serif; font-size: 1.2rem; color: #5a3e3e; margin: 0;">
+                &copy; 2024 Jerick & Cassy. All rights reserved. | 
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

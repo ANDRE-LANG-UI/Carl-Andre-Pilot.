@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        span {
+            color: #000000;
+            font-style: normal;
+        }
+        
+        /* Navbar Styling */
+        .navbar {
+            background-color: #e4cfcf;
+            box-shadow: 0 4px 8px rgba(69, 5, 5, 0.1);
+        }
+
+        .navbar .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .navbar-brand .logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        .navbar .navbar-brand .brand-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #5a3e3e;
+            margin-left: 8px;
+            text-transform: uppercase;
+        }
+
+        .navbar-nav .nav-link {
+            color: #5a3e3e;
+            font-size: 1.1rem;
+            padding: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        *, ::after, ::before {
+            box-sizing: border-box;
+            font-family: 'Playfair Display', serif;
+        }   
+        .navbar-nav .nav-link:hover {
+            color: #d9534f;
+            text-decoration: none;
+        }
+        /* Hero Section */
+        .hero {
+            background-image: url('./andre.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        /* About Section */
+        .about-container {
+            background-color: #e4cfcf;
+            padding: 80px 0;
+        }
+
+        .about-container .title-box h2 {
+            font-size: 3rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .about-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+            gap: 40px;
+        }
+
+        .about-img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .about-img:hover {
+            transform: scale(1.05);
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 600px;
+            color: #555;
+        }
+
+        .about-link {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .about-link span {
+            color: #d9534f;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #f8f9fa;
+            padding: 30px 0;
+            border-top: 2px solid #d9534f;
+        }
+
+        .footer-text {
+            font-size: 1.2rem;
+            color: #5a3e3e;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="./at-initial-wedding-monogram-logo-vector.jpg" alt="Wedding Planner Logo" class="logo">
+            <span>Wedding</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="our story.html">Our Story</a></li>
+                <li class="nav-item"><a class="nav-link" href="guests.html">Guests</a></li>
+                <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+                <li class="nav-item"><a class="nav-link" href="itinerary.html">Itinerary</a></li>
+                <li class="nav-item"><a class="nav-link" href="registry.html">Registry</a></li>
+                <li class="nav-item"><a class="nav-link" href="rsvp.html">RSVP</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Hero Section -->
+<section id="home" class="hero text-center">
+    <div class="container" style="position: relative; z-index: 1; padding-top: 15vh;">
+        <!-- Content for Hero Section -->
+        <h1 class="hero-heading">Jerick & Cassy</h1>
+        <p class="hero-subtitle">A Love Story to Remember</p>
+    </div>
+    <style>
+        .hero {
+    background-image: url('./123.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.hero-heading {
+    font-size: 4.5rem;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    margin-top: 0; /* Set to 0 or adjust as needed */
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 400px;
+    color: #000000;
+    margin-top: 10px;  /* Space between the heading and subtitle */
+}
+
+    </style>
+</section>
+       
+    </div>
+        
+    </div>
+</section>
+
+
+
+
+<!-- Bootstrap and JS Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+
+<!-- GUESTS SECTION -->
+<section id="guest" class="py-5">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="row justify-content-center mb-5 animate-box">
+            <div class="col-md-8 text-center heading-section">
+                <h1 class="section-title">Our Cherished Guests</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    /* Section Title Styling */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #5a3e3e;  /* Warm color to match wedding theme */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow effect */
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: #d9534f;  /* Accent color */
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+</style>
+<!-- Groomsmen Section -->
+<div class="row text-center mb-5 animate-box">
+    <div class="col-md-12">
+        <h2 class="groomsmen-title">Meet the Groomsmen</h2> <!-- Enhanced text -->
+    </div>
+</div>
+<style>/* Groomsmen Section Title */
+    .groomsmen-title {
+        font-family: 'Playfair Display', serif; /* Elegant font */
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #5a3e3e; /* Rich color for the title */
+        text-transform: uppercase; /* Keep it capitalized for a formal look */
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Soft text shadow for depth */
+    }
+    </style>
+</div>
+<div class="row justify-content-center">
+    <div class="col-md-3 text-center animate-box">
+        <div class="bridesmaid-image-container">
+            <img src="./037cced74eaa390984ac9e1e1a904457.jpg" class="img-fluid bride-image" alt="Bridesmaid 1">
+            <h3>Lebron James</h3>
+        </div>
+    </div>
+    <div class="col-md-3 text-center animate-box">
+        <div class="bridesmaid-image-container">
+            <img src="./2db27dac0bc1d1c82b6f803565bc8d56.jpg" class="img-fluid bride-image" alt="Bridesmaid 2">
+            <h3>Anthony Davis</h3>
+        </div>
+    </div>
+    <div class="col-md-3 text-center animate-box">
+        <div class="bridesmaid-image-container">
+            <img src="./06f78759a2cd9a9c177c64e7b0db8a00.jpg" class="img-fluid bride-image" alt="Bridesmaid 3">
+            <h3>Bronny James</h3>
+        </div>
+    </div>
+    <div class="col-md-3 text-center animate-box">
+        <div class="bridesmaid-image-container">
+            <img src="./groom 1.jpg" class="img-fluid bride-image" alt="Bridesmaid 4">
+            <h3>Dwayne Wade</h3>
+        </div>
+    </div>
+</div>
+</div>
+
+  <!-- Bridesmaid Section -->
+<div class="row text-center mb-5 animate-box">
+    <div class="col-md-12">
+        <h2 class="bridesmaids-title">Meet the Bridesmaids</h2> <!-- Enhanced text -->
+    </div>
+</div>
+<style>
+    /* Bridesmaids Section Title */
+.bridesmaids-title {
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #5a3e3e; /* Elegant and rich color */
+    text-transform: uppercase; /* Keeps it formal */
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for depth */
+}
+
+</style>
+        
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3 text-center animate-box">
+                <div class="bridesmaid-image-container">
+                    <img src="./bride 7.webp" class="img-fluid bride-image" alt="Bridesmaid 1">
+                    <h3>Ella James</h3>
+                </div>
+            </div>
+            <div class="col-md-3 text-center animate-box">
+                <div class="bridesmaid-image-container">
+                    <img src="bride 2.jpg" class="img-fluid bride-image" alt="Bridesmaid 2">
+                    <h3>Stella Stone</h3>
+                </div>
+            </div>
+            <div class="col-md-3 text-center animate-box">
+                <div class="bridesmaid-image-container">
+                    <img src="./bride 3.webp" class="img-fluid bride-image" alt="Bridesmaid 3">
+                    <h3>Brenda Green</h3>
+                </div>
+            </div>
+            <div class="col-md-3 text-center animate-box">
+                <div class="bridesmaid-image-container">
+                    <img src="./bride 6.jpg" class="img-fluid bride-image" alt="Bridesmaid 4">
+                    <h3>Bella Wade</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer text-center py-4" style="background-color: #f8f9fa; border-top: 2px solid #d9534f;">
+    <div class="container">
+        <p class="footer-text" style="font-family: 'Lora', serif; font-size: 1.2rem; color: #5a3e3e; margin: 0;">
+            &copy; 2024 Jerick & Cassy. All rights reserved. | 
+        </p>
+    </div>
+</footer>
+
+<style>
+    /* General Body and Layout */
+    body {
+            font-family: 'Playfair Display', serif;
+            background-color: #e4cfcf;
+            margin-top: 70px; /* Adjust margin for navbar */
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #e4cfcf;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .navbar-brand .logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        .navbar .navbar-brand .brand-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #5a3e3e;
+            margin-left: 8px;
+            text-transform: uppercase;
+        }
+
+        .navbar-nav .nav-link {
+            color: #5a3e3e;
+            font-size: 1.1rem;
+            padding: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #d9534f;
+            text-decoration: none;
+        }
+
+        /* Guest Section */
+        #guest {
+            background-color: #e4cfcf;
+            padding: 50px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #444;
+            margin-bottom: 2rem;
+        }
+
+        .groom-image, .bride-image {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .groom-image:hover, .bride-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .groom-men h3, .bridesmaid-image-container h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            color: #333;
+        }
+
+        .groom-men, .bridesmaid-image-container {
+            margin-bottom: 1.5rem;
+        }
+
+        .row-bottom-padded-lg {
+            margin-bottom: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .groom-image, .bride-image {
+                width: 80%;
+            }
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #e4cfcf;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            color: #333;
+            margin: 0;
+        }
+
+        /* Animations */
+        .animate-box {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.7s forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* General Body and Layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #e4cfcf;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Ensure it's fixed at the top */
+    top: 0;
+    width: 100%; /* Make the navbar take full width */
+    z-index: 1000; /* Make sure navbar stays on top of other content */
+}
+
+.navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-brand .logo {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar .navbar-brand .brand-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #5a3e3e;
+    margin-left: 8px;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+    color: #5a3e3e;
+    font-size: 1.1rem;
+    padding: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    border-color: #5a3e3e; /* Toggler color */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('./123.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 70px; /* Adjust the margin-top to avoid the navbar overlap */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    border-top: 2px solid #d9534f;
+    margin-top: 100px; /* Ensure there's enough space between footer and other content */
+}
+
+    </style>
+</head>
+<body>
+</style>

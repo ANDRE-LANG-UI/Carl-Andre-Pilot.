@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e4cfcf;
+            color: #5a3e3e;
+            margin: 0;
+        }
+
+        /* Hero Section Styling */
+        #home {
+            background-image: url('./we.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            color: #000000;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding-top: 20vh;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+       /* Navbar Styling */
+       .navbar {
+            background-color: #e4cfcf;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            color: #5a3e3e;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+        }
+
+        .navbar .navbar-brand .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #5a3e3e;
+            font-size: 1.1rem;
+            padding: 12px 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #d9534f;
+            text-decoration: none;
+        }
+
+        .navbar-toggler {
+            border-color: #5a3e3e;
+        }
+
+        /* Section Title Styling */
+        .section-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #2C3E50;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #f8f9fa;
+            padding: 0.75rem;
+            color: #5a3e3e;
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        /* Image Styling */
+        .custom-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Venue Section Styling */
+        #venue {
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        #venue .row img {
+            margin-bottom: 15px;
+        }
+
+
+/* Footer Styling */
+.footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    border-top: 2px solid #d9534f;
+}
+
+.footer-text {
+    font-size: 1.2rem;
+    color: #5a3e3e;
+    margin: 0;
+}
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section id="home">
+    <div class="container hero-content">
+        <h1>Jerick & Cassy</h1>
+        <p>A Love Story to Remember</p>
+    </div>
+</section>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="./at-initial-wedding-monogram-logo-vector.jpg" alt="Wedding Planner Logo" class="logo">
+            <span>Wedding</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="our story.html">Our Story</a></li>
+                <li class="nav-item"><a class="nav-link" href="guests.html">Guests</a></li>
+                <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+                <li class="nav-item"><a class="nav-link" href="itinerary.html">Itinerary</a></li>
+                <li class="nav-item"><a class="nav-link" href="registry.html">Registry</a></li>
+                <li class="nav-item"><a class="nav-link" href="rsvp.html">RSVP</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Venue Section -->
+<section id="venue" class="py-5" style="background-color: #f4e1d2;">
+    <div class="container text-center">
+        <h1 class="section-title">Venue</h1>
+        <p class="section-subtitle">Discover the enchanting locations where our special day will unfold.</p>
+        
+        <div class="row g-4 mt-3">
+            <div class="col-md-4">
+                <div class="venue-card">
+                    <img src="./pink-rose-garden-wedding-taglyan-complex-eddie-zaratsian-lifestyle-and-design-kris-kan-2500-1.jpg" alt="Wedding Venue 1" class="img-fluid custom-img">
+                    <p class="venue-caption">The Rose Garden - A romantic outdoor setting with blooming flowers.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="venue-card">
+                    <img src="./WEDDING 1.jpg" alt="Wedding Venue 2" class="img-fluid custom-img">
+                    <p class="venue-caption">The Rose Garden - Perfect for a grand reception filled with elegance.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="venue-card">
+                    <img src="./WEDDING 2.jpg" alt="Wedding Venue 3" class="img-fluid custom-img">
+                    <p class="venue-caption">The Rose Garden - A serene and beautiful location for the vows.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Section Title */
+    .section-title {
+        font-size: 3rem;
+        font-family: 'Playfair Display', serif;
+        color: #5a3e3e;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    
+    /* Section Subtitle */
+    .section-subtitle {
+        font-size: 1.2rem;
+        color: #5a3e3e;
+        margin-bottom: 30px;
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* Venue Card Styling */
+    .venue-card {
+        text-align: center;
+    }
+
+    .custom-img {
+        width: 100%;
+        height: 300px; /* Adjusted height */
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease; /* Add hover effect */
+    }
+    
+    .custom-img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+    }
+
+    /* Venue Caption Styling */
+    .venue-caption {
+        font-size: 1rem;
+        color: #5a3e3e;
+        margin-top: 10px;
+        font-style: italic;
+    }
+</style>
+
+
+<!-- Footer Section -->
+<div class="footer text-center">
+    <p class="footer-text">© 2024 Jerick & Cassy | All rights reserved</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
